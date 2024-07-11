@@ -1,0 +1,56 @@
+.footer {
+  /* position: absolute; */
+  /* bottom: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+.leftPart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.githubIcon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.copyright {
+  font-size: 14px;
+  font-weight: 500;
+}
+.emailDiv {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media (max-width: 850px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .copyright, .emailDiv {
+    font-size: 12px;
+  }  
+}
+@media (max-width: 300px) {
+  .leftPart {
+    flex-wrap: wrap;
+  }
+  .copyright {
+    word-wrap: break-word;
+    width: 100%;
+    text-align: center;
+  }
+  .githubIcon {
+    display: none;
+  }
+}

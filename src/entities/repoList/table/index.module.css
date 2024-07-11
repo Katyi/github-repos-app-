@@ -1,0 +1,57 @@
+.tableWrapper {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+table {
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+thead {
+  background-color: lightgray;
+}
+th {
+  padding: 10px 5px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+}
+td {
+  padding: 2px 5px;
+  border-bottom: 0.2px solid lightgray;
+  font-size: 14px;
+  /* text-align: left; */
+}
+th:first-child,
+td:first-child {
+  width: 5%;
+  padding-left: 2%;
+}
+th:nth-child(2),
+td:nth-child(2) {
+  width: 28%;
+}
+th:nth-child(3),
+td:nth-child(3) {
+  width: 5%;
+}
+th:nth-child(4),
+td:nth-child(4) {
+  width: 5%;
+}
+th:last-child,
+td:last-child {
+  width: 43%;
+  padding-right: 2%;
+}
+td:last-child {
+  padding-bottom: 7px;
+}
+.linkToCard {
+  
+  color: #222a2f;
+  text-decoration: none;
+}
+.linkToCard:hover {
+  color: darkgray;
+}

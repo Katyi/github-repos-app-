@@ -1,0 +1,11 @@
+.pageRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+.buttonCurrentPage {
+  background-color: darkgray !important;
+  color: #fff !important;
+}

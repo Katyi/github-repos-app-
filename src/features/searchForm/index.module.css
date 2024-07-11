@@ -1,0 +1,22 @@
+.formWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.repoInput {
+  width: 240px;
+  padding: 5px 10px;
+  margin: 0;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
+.repoInput:focus {
+  border: 2px solid gray;
+  outline: none;
+}
+.formBtn {
+  background-color: darkgray !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
