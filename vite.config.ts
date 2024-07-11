@@ -3,18 +3,17 @@ import react from '@vitejs/plugin-react'
 
 type ConfigEnv = /*unresolved*/ any;
 
-// https://vitejs.dev/config/
 export default defineConfig((mode: ConfigEnv) => {
   const env = loadEnv(mode, process.cwd(), '');
   return {
     define: {
       'process.env.REACT_APP_GITHUB_TOKEN': JSON.stringify(env.REACT_APP_GITHUB_TOKEN)
     },
-    // base: "/github-repos-app-/",
+    base: "/github-repos-app-/",
     plugins: [react()],
     server: {
       host: true,
-      port: 3000 // change here
+      port: 3000
     },
   }
 })

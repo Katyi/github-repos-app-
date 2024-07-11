@@ -5,7 +5,7 @@ import Footer from "../features/footer";
 
 const Routing = () => {
   return (
-    <Router>
+    <Router basename={"/github-repos-app-/"}>
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/repos/:id' element={<RepoCardPage/>}/>
