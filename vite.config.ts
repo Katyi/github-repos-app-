@@ -9,7 +9,6 @@ export default defineConfig((mode: ConfigEnv) => {
     define: {
       'process.env.REACT_APP_GITHUB_TOKEN': JSON.stringify(env.REACT_APP_GITHUB_TOKEN)
     },
-    base: "/github-repos-app-/",
     plugins: [react()],
     server: {
       host: true,
